@@ -4,16 +4,15 @@ using CursoDeDesignPatterns.ChainsOfResposability;
 using CursoDeDesignPatterns.Interfaces;
 using CursoDeDesignPatterns.Strategy;
 using CursoDeDesignPatterns.Strategy.Interfaces;
+using CursoDeDesignPatterns.TemplateMethod;
 
-
-
-
-CalculadorDeDescontos calculador = new();
+TemplateDeImpostoCondicional ihit = new IHIT();
+CalculadorDeImpostos calculador = new();
 Orcamento orcamento = new(500.0);
-orcamento.AdicionaItem(new Item("CANETA", 500.0));
-orcamento.AdicionaItem(new Item("LAPIS", 500.0));
+orcamento.AdicionaItem(new Item("CANETA", 250.0));
+orcamento.AdicionaItem(new Item("CANETA", 250.0));
 
-double desconta = calculador.Calcula(orcamento);
+double desconta = calculador.RealizaCalculo(orcamento, ihit);
 Console.WriteLine(desconta);
 
 // Conta conta = new();
