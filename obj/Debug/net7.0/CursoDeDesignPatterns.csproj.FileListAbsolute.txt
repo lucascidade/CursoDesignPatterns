@@ -1,0 +1,15 @@
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\obj\Debug\net7.0\CursoDeDesignPatterns.csproj.AssemblyReference.cache
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\obj\Debug\net7.0\CursoDeDesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\obj\Debug\net7.0\CursoDeDesignPatterns.AssemblyInfoInputs.cache
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\obj\Debug\net7.0\CursoDeDesignPatterns.AssemblyInfo.cs
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\obj\Debug\net7.0\CursoDeDesignPatterns.csproj.CoreCompileInputs.cache
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\bin\Debug\net7.0\CursoDeDesignPatterns.exe
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\bin\Debug\net7.0\CursoDeDesignPatterns.deps.json
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\bin\Debug\net7.0\CursoDeDesignPatterns.runtimeconfig.json
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\bin\Debug\net7.0\CursoDeDesignPatterns.dll
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\bin\Debug\net7.0\CursoDeDesignPatterns.pdb
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\obj\Debug\net7.0\CursoDeDesignPatterns.dll
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\obj\Debug\net7.0\refint\CursoDeDesignPatterns.dll
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\obj\Debug\net7.0\CursoDeDesignPatterns.pdb
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\obj\Debug\net7.0\CursoDeDesignPatterns.genruntimeconfig.cache
+C:\Users\lucascidade\Desktop\LUCAS BKB\CursoDeDesignPatterns\obj\Debug\net7.0\ref\CursoDeDesignPatterns.dll
