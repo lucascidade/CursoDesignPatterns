@@ -6,14 +6,14 @@ using CursoDeDesignPatterns.Strategy;
 using CursoDeDesignPatterns.Strategy.Interfaces;
 using CursoDeDesignPatterns.TemplateMethod;
 
-TemplateDeImpostoCondicional ihit = new IHIT();
-CalculadorDeImpostos calculador = new();
-Orcamento orcamento = new(500.0);
-orcamento.AdicionaItem(new Item("CANETA", 250.0));
-orcamento.AdicionaItem(new Item("CANETA", 250.0));
+// TemplateDeImpostoCondicional ihit = new IHIT();
+// CalculadorDeImpostos calculador = new();
+// Orcamento orcamento = new(500.0);
+// orcamento.AdicionaItem(new Item("CANETA", 250.0));
+// orcamento.AdicionaItem(new Item("CANETA", 250.0));
 
-double desconta = calculador.RealizaCalculo(orcamento, ihit);
-Console.WriteLine(desconta);
+// double desconta = calculador.RealizaCalculo(orcamento, ihit);
+// Console.WriteLine(desconta);
 
 // Conta conta = new();
 // conta.Deposita(500);
@@ -43,10 +43,10 @@ Console.WriteLine(desconta);
 
 
 
-// Imposto iss = new ISS();
+Imposto iss = new ISS(new ICMS());
 // Imposto icms = new ICMS();
 // Imposto iccc = new ICCC();
-// Orcamento orcamento = new(3001.0);
+Orcamento orcamento = new(3001.0);
 // CalculadorDeImpostos calculador = new();
 
 // calculador.RealizaCalculo(orcamento, icms);
