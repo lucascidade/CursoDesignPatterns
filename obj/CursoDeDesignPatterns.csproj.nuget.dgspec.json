@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\lucascidade\\Desktop\\LUCAS BKB\\CursoDeDesignPatterns\\CursoDeDesignPatterns.csproj": {}
+    "C:\\Users\\lucascidade\\Desktop\\LUCAS BKB\\CursoDeDesignPatterns\\CursoDeDesignPatterns.csproj": {}
   },
   "projects": {
-    "c:\\Users\\lucascidade\\Desktop\\LUCAS BKB\\CursoDeDesignPatterns\\CursoDeDesignPatterns.csproj": {
+    "C:\\Users\\lucascidade\\Desktop\\LUCAS BKB\\CursoDeDesignPatterns\\CursoDeDesignPatterns.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\lucascidade\\Desktop\\LUCAS BKB\\CursoDeDesignPatterns\\CursoDeDesignPatterns.csproj",
+        "projectUniqueName": "C:\\Users\\lucascidade\\Desktop\\LUCAS BKB\\CursoDeDesignPatterns\\CursoDeDesignPatterns.csproj",
         "projectName": "CursoDeDesignPatterns",
-        "projectPath": "c:\\Users\\lucascidade\\Desktop\\LUCAS BKB\\CursoDeDesignPatterns\\CursoDeDesignPatterns.csproj",
+        "projectPath": "C:\\Users\\lucascidade\\Desktop\\LUCAS BKB\\CursoDeDesignPatterns\\CursoDeDesignPatterns.csproj",
         "packagesPath": "C:\\Users\\lucascidade\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\lucascidade\\Desktop\\LUCAS BKB\\CursoDeDesignPatterns\\obj\\",
+        "outputPath": "C:\\Users\\lucascidade\\Desktop\\LUCAS BKB\\CursoDeDesignPatterns\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
