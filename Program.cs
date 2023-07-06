@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Reflection.Metadata;
 using CursoDeDesignPatterns;
+using CursoDeDesignPatterns.Builder;
 using CursoDeDesignPatterns.ChainsOfResposability;
 using CursoDeDesignPatterns.Interfaces;
 using CursoDeDesignPatterns.Strategy;
@@ -9,17 +11,34 @@ using CursoDeDesignPatterns.TemplateMethod;
 
 
 
+NotaFiscalBuilder builder = new();
 
-Orcamento reforma = new(500.0);
-Console.WriteLine(reforma.Valor);
-reforma.AplicaDescontoExtra();
-Console.WriteLine(reforma.Valor);
-reforma.Aprova();
+builder.ParaEmpresa("TESTE DE EMPRESA")
+    .ComCnpj("05.561.915/0001-90")
+    .ComItem(new ItemDaNota("item 1", 200.0))
+    .ComItem(new ItemDaNota("item 2", 100.0))
+    .NaDataAtual()
+    .ComObservacoes("QUALQUER COISA AQUI");
 
-reforma.AplicaDescontoExtra();
-reforma.Finaliza();
-Console.WriteLine(reforma.Valor);
-reforma.Reprova();
+Console.WriteLine(builder.RazaoSocial);
+Console.WriteLine(builder.Cnpj);
+Console.WriteLine(builder.Data);
+
+NotaFiscal notaFiscal = builder.Constroi();
+Console.WriteLine(notaFiscal.ValorBruto);
+Console.WriteLine(notaFiscal.Impostos);
+
+
+// Orcamento reforma = new(500.0);
+// Console.WriteLine(reforma.Valor);
+// reforma.AplicaDescontoExtra();
+// Console.WriteLine(reforma.Valor);
+// reforma.Aprova();
+
+// reforma.AplicaDescontoExtra();
+// reforma.Finaliza();
+// Console.WriteLine(reforma.Valor);
+// reforma.Reprova();
 
 
 
