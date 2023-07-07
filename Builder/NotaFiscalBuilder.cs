@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CursoDeDesignPatterns.Interfaces;
 
 namespace CursoDeDesignPatterns.Builder
 {
@@ -14,11 +15,22 @@ namespace CursoDeDesignPatterns.Builder
         private double valorTotal;
         private double impostos;
         private IList<ItemDaNota> todosItens = new List<ItemDaNota>();
-
+        private IList<AcaoAposGerarNota> todasAcoesASeremExecutadas = new List<AcaoAposGerarNota>();
         public NotaFiscal Constroi()
         {
-            return new NotaFiscal(RazaoSocial, Cnpj, Data, valorTotal, impostos, Observacoes, todosItens);
+            NotaFiscal notaFiscal = new NotaFiscal(RazaoSocial, Cnpj, Data, valorTotal, impostos, Observacoes, todosItens);
+            foreach (AcaoAposGerarNota acao in todasAcoesASeremExecutadas)
+            {
+                acao.Executa(notaFiscal);
+            }
+            return notaFiscal;
         }
+
+        public void AdicionaAcao(AcaoAposGerarNota novaAcao)
+        {
+            todasAcoesASeremExecutadas.Add(novaAcao);
+        }
+
         public NotaFiscalBuilder ParaEmpresa(string razaoSocial)
         {
             RazaoSocial = razaoSocial;

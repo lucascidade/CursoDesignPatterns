@@ -4,6 +4,7 @@ using CursoDeDesignPatterns;
 using CursoDeDesignPatterns.Builder;
 using CursoDeDesignPatterns.ChainsOfResposability;
 using CursoDeDesignPatterns.Interfaces;
+using CursoDeDesignPatterns.Observer;
 using CursoDeDesignPatterns.Strategy;
 using CursoDeDesignPatterns.Strategy.Interfaces;
 using CursoDeDesignPatterns.TemplateMethod;
@@ -23,10 +24,14 @@ builder.ParaEmpresa("TESTE DE EMPRESA")
 Console.WriteLine(builder.RazaoSocial);
 Console.WriteLine(builder.Cnpj);
 Console.WriteLine(builder.Data);
+builder.AdicionaAcao(new EnviadorDeEmail());
+builder.AdicionaAcao(new EnviadorDeSms());
+builder.AdicionaAcao(new NotaFiscalDao());
 
 NotaFiscal notaFiscal = builder.Constroi();
 Console.WriteLine(notaFiscal.ValorBruto);
 Console.WriteLine(notaFiscal.Impostos);
+
 
 
 // Orcamento reforma = new(500.0);
