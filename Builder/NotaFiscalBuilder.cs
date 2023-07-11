@@ -16,6 +16,17 @@ namespace CursoDeDesignPatterns.Builder
         private double impostos;
         private IList<ItemDaNota> todosItens = new List<ItemDaNota>();
         private IList<AcaoAposGerarNota> todasAcoesASeremExecutadas = new List<AcaoAposGerarNota>();
+
+
+        public NotaFiscalBuilder(IList<AcaoAposGerarNota> lista)
+        {
+            todasAcoesASeremExecutadas = lista;
+        }
+
+        public NotaFiscalBuilder()
+        {
+        }
+
         public NotaFiscal Constroi()
         {
             NotaFiscal notaFiscal = new NotaFiscal(RazaoSocial, Cnpj, Data, valorTotal, impostos, Observacoes, todosItens);

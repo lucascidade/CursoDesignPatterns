@@ -10,9 +10,14 @@ using CursoDeDesignPatterns.Strategy.Interfaces;
 using CursoDeDesignPatterns.TemplateMethod;
 
 
+IList<AcaoAposGerarNota> acoes = new List<AcaoAposGerarNota> {
+    new EnviadorDeEmail(),
+    new Multiplicador(2),
+    new EnviadorDeSms()
+};
 
+NotaFiscalBuilder builder = new(acoes);
 
-NotaFiscalBuilder builder = new();
 
 builder.ParaEmpresa("TESTE DE EMPRESA")
     .ComCnpj("05.561.915/0001-90")
@@ -24,10 +29,11 @@ builder.ParaEmpresa("TESTE DE EMPRESA")
 Console.WriteLine(builder.RazaoSocial);
 Console.WriteLine(builder.Cnpj);
 Console.WriteLine(builder.Data);
-builder.AdicionaAcao(new EnviadorDeEmail());
-builder.AdicionaAcao(new EnviadorDeSms());
-builder.AdicionaAcao(new NotaFiscalDao());
-
+// builder.AdicionaAcao(new EnviadorDeEmail());
+// builder.AdicionaAcao(new EnviadorDeSms());
+// builder.AdicionaAcao(new NotaFiscalDao());
+// builder.AdicionaAcao(new Multiplicador(3));
+// builder.AdicionaAcao(new Multiplicador(4));
 NotaFiscal notaFiscal = builder.Constroi();
 Console.WriteLine(notaFiscal.ValorBruto);
 Console.WriteLine(notaFiscal.Impostos);
